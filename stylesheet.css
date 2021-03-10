@@ -1,0 +1,78 @@
+@import "/andy-bell's-reset.css";
+
+:root {
+	--labelle-red: #f90000;
+}
+
+html {
+	border-top: 1.5rem solid var(--labelle-red);
+	border-bottom: 0.75rem solid var(--labelle-red);
+}
+
+body {
+	padding: 0.5rem 1.5rem 4rem;
+	max-width: 66ch;
+	margin: 0 auto;
+	
+	font-family: "Gill Sans", sans-serif;
+	font-size: 20pt;
+	
+	color: #333;
+}
+
+h1, h2 {
+	line-height: 1;
+	font-weight: inherit;
+	margin-bottom: 3.5rem;
+	
+	border-bottom: 1px solid var(--labelle-red);
+	padding-bottom: 0.5rem;
+}
+
+h1 {
+	font-size: 30pt;
+	margin-top: 0.5em;
+	font-weight: 200;
+}
+
+h2 {
+	color: var(--labelle-red);
+	
+	margin-top: 3em;
+	font-size: 18pt;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+}
+
+#the-a-in-labelle, mark, a {
+	color: var(--labelle-red);
+}
+
+mark {
+	background: none;
+}
+
+p + p {
+	margin-top: 1.5em;
+}
+
+#menu-download {
+	background: var(--labelle-red);
+	color: white;
+	font-weight: 400;
+	font-size: 30pt;
+	
+	text-decoration: none;
+	display: inline-block;
+	padding: 0 0.5em;
+	height: 1.5em;
+	border-radius:0.75em;
+	margin-top: 1.5rem;
+}
+
+dl {
+	display: grid;
+	grid-template-columns: min-content auto;
+	grid-column-gap: 1em;
+}
